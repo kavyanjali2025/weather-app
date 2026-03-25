@@ -46,7 +46,7 @@ else:
     print("Error fetching data. Please check the city name or API key.")
 
 
-# JSON (JavaScript Object Notation) is a data format that is built on two basic structures:
+# JSON is a data format that is built on two basic structures:
 # a) Objects (key–value pairs)
 
 # Written as { "key": "value" }
@@ -54,3 +54,7 @@ else:
 # b) Arrays (ordered lists)
 
 # Written as [ item1, item2, item3 ]
+
+# JSON (JavaScript Object Notation) is a lightweight, text-based format used to store and 
+# exchange semi-structured or unstructured data, especially in web APIs, configuration files, and 
+# NoSQL databases. It’s human-readable, language-independent, and widely adopted across modern applications.
