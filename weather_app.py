@@ -1,8 +1,9 @@
 import requests
 
-# Replace with your own API key
 API_KEY = "0ce71c2ed8445f996b5cc9d5efce08cc"
+# personal key from OpenWeatherMap (needed for authentication).
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+# the endpoint for current weather data.
 
 # Ask user for city name
 city = input("Enter city name: ")
@@ -10,9 +11,12 @@ city = input("Enter city name: ")
 # Build request URL
 url = f"{BASE_URL}?q={city}&appid={API_KEY}&units=metric"
 # & is just a separator between multiple parameters in the URL.
+# Every API defines its own parameters in its documentation.
+# For OpenWeatherMap, q, appid, and units are part of its specification.
 
 # Send request
 response = requests.get(url)
+# Stores the server’s response in response.
 
 if response.status_code == 200:
     data = response.json()
